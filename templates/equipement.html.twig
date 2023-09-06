@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>choix équipement</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="apparence.css" />
+</head>
+{% block nav %}
+<a href="{{ path('ens') }}">accueil</a> > equipement
+{% endblock %}
+
+
+<body id="global">
+
+
+
+	 <div id="header">    
+        <div id="title">
+            <h1>gestionmateriel</h1>
+            
+        </div>
+        </div> 
+
+
+        <h2>Sélection d'un équipement:</h2>
+
+        
+     <form>
+
+            <label for="choice">Veuillez sélectionner un équipement : </label>
+            <select name="choice"  class="form-control" >
+            {% for eq in materiel %}
+            <option value="">{{eq.nom}}</option> <!-- Affichage de la liste des équipements -->
+            
+            
+           {% endfor %}
+            </select>            
+
+
+
+
+            <br>
+            <button type="submit" class='btn btn-primary'>Gérer l'équipement</button>
+        </form>
+        
+  
+
+    
+

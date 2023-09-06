@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se connecter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="apparence.css"  />
+</head>
+
+
+<body id="global">
+    
+    <div id="header">    
+        <div id="title">
+            <h1>gestionmateriel</h1>
+            
+        </div>
+        </div> 
+
+    <h2>Veuillez vous authentifier:</h2>
+    <form action="2_traiterFormConnexion.php" method="post">
+            <label for="inputNom">Login : </label>
+            <input type="text" name="login" placeholder="saisissez votre login" class="form-control"><br>
+
+            <label for="inputPrenom">Password : </label>
+            <input type="password" name="pass" placeholder="saisissez votre mot de passe" class="form-control" > 
+            <br>
+            <button type="submit" class='btn btn-warning'>Valider</button>
+        </form>
+   
+</body>
+</html>

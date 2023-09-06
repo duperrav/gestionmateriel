@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>espace enseignant</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"  crossorigin="anonymous">
+    <link rel="stylesheet" href="apparence.css"  />
+</head>
+{% block nav %}
+accueil
+{% endblock %}
+
+<body>
+
+    <div id="header">   
+        <div id="title">
+            <h1>gestionmateriel</h1>
+            
+        </div>
+    </div>   
+    <h2>Bienvenue dans l'espace enseignant:</h2>
+    
+            
+   {{ form_start(form, {'method': 'GET'}) }}
+    
+    {# {{ form_label(form.label, "Choix d'une salle") }} #}
+    {# {{ form_errors(form) }} #}
+
+    {# {{ form_row(form.name) }} #}
+    {# {{ form_row(form.choix) }} #}
+
+    {# {{ form_row(form.acceder, { 'test': 'Accéder à la salle' }) }}  #}
+ {{ form_end(form) }} 
+            
+{#  <form action="">
+
+            <label for="choice">Veuillez sélectionner une salle : </label>
+            <select name="choice"  class="form-control" >
+            {% for Sall in tableau %}
+            <option value="">{{Sall.nom}}</option> <!-- Affichage de la liste de salles -->
+            
+            
+           {% endfor %}
+            </select>            
+
+
+
+
+            <br>
+            <button type="submit" class='btn btn-primary'>Accéder à la salle</button>
+        </form>#}
+   
+</body>
+</html>
