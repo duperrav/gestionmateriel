@@ -11,23 +11,16 @@
 
 <body>
 
-
-
-            
-            
-    
-    
    <div id="header">    
         <div id="title">
-            <h1>gestionmateriel</h1>
-            
+            <h1>gestionmateriel</h1>   
         </div>
-        </div> 
+    </div> 
 
 <h2>Bienvenue dans l'espace technicien:</h2>
-    <table class="table">
-     
-        
+   
+<table class="table">
+         
     <thead>
             <tr>
                 <th>sujet</th>
@@ -35,30 +28,20 @@
                 <th>description</th>
                 <th>action</th>
             </tr>
-        </thead>
+    </thead>
   
     <tbody>
     	{% for ligne in problemes %}
-            <tr id="ligne_{{ligne.sujet}}">
-    	<td>{{ligne.sujet}}</td> 
-        <td>{{ligne.description}}</td>
-        <td><button class="btn btn-danger"
-                            onclick="#">                        
-                            Intervenir
-                        </button>
-
-        </td>
-
-          </tr>
-            {% endfor %}
+        <tr id="ligne_{{ligne.sujet}}">
+        	<td>{{ligne.sujet}}</td> 
+            <td>{{ligne.description}}</td>
+            <td><button class="btn btn-danger" onclick="#"> Intervenir </button></td>
+        </tr>
+        {% endfor %}
 
     </tbody>    
 
-
-
-
-
-     </table>
+</table>
 
 
 
