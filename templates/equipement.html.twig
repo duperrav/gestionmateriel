@@ -13,37 +13,24 @@
 
 
 <body id="global">
-
-
-
-	 <div id="header">    
+    <div id="header">    
         <div id="title">
             <h1>gestionmateriel</h1>
-            
         </div>
-        </div> 
+     </div> 
 
-
-        <h2>Sélection d'un équipement:</h2>
-
-        
+     <h2>Sélection d'un équipement:</h2>
+     
      <form>
-
             <label for="choice">Veuillez sélectionner un équipement : </label>
             <select name="choice"  class="form-control" >
-            {% for eq in materiel %}
-            <option value="">{{eq.nom}}</option> <!-- Affichage de la liste des équipements -->
-            
-            
-           {% endfor %}
+	            {% for eq in materiel %}
+	            <option value="">{{eq.nom}}</option> <!-- Affichage de la liste des équipements -->
+	            {% endfor %}
             </select>            
-
-
-
-
             <br>
             <button type="submit" class='btn btn-primary'>Gérer l'équipement</button>
-        </form>
+      </form>
         
   
 
