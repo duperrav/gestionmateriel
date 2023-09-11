@@ -1,5 +1,5 @@
 # gestionmateriel
-Projet Symfony pour la gestion d'équipements dans un établissement
+Projet Symfony pour la gestion d'équipements dans un établissement.
 
 L’objectif est de pouvoir donner la possibilité au responsable de connaître l’état des
 équipements pour chaque salle et si besoin signaler un problème via un ticket d’incident. Le
