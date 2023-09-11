@@ -63,14 +63,4 @@ class Incident
         return $this;
     }
 
-
-
-
-   
-
-
-
-
-
-
 }
