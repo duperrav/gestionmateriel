@@ -34,7 +34,6 @@ class Gestionnaire extends AbstractController
     }
 	
 	
-	
 	/**
 	 * @Route("hello")
 	 */
@@ -47,8 +46,6 @@ class Gestionnaire extends AbstractController
 		$reponse .= "</html>";
         
 		return new Response($reponse);
-
-
 	}
 
    
@@ -60,8 +57,7 @@ class Gestionnaire extends AbstractController
 	  return $this->render(
 			"authentifier.html.twig"
 			
-		);
-	  
+		); 
 	}
 
 
@@ -86,53 +82,8 @@ class Gestionnaire extends AbstractController
 	   ['form'=>$form->createView()]);
 	   
 	   $form->handleRequest($request);
- 	/*  if ($form->isSubmitted() && $form->isValid())
- 		{
- 			$donnees = $form->getData();
- 			$nvAppel = new Appel();
-            $groupe = $this->getDoctrine()->getRepository(Groupe::class)
-            ->find($donnees['choixGroupe']);
-            $nvAppel->setIdGroupe($groupe);
-            $nvAppel->setLibelle($donnees["libelle"]);
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($nvAppel);
-            $em->flush();
-
-            return $this->render("confirmerCreationAppel.html.twig",
-            ["msg"=>"Tralala ".$nvAppel->getIdAppel()]);
- }
-*/	  
+ 	
 	 }
-
-
- //   /**
-//	 * @Route("accesEquipement")
-//	 */
-
-
-  //  public function accesEquipement(Request $request)
-//	{
-  
-
-//  $equipement = $this->getDoctrine()->getRepository(::class)
-// ->findAll();
-
-//  $form->handleRequest($request);
- // Est-ce qu’il y a des données, et sont-elles valides :
- // => si oui, on traite.
- //if ($form->isSubmitted() && $form->isValid())
- //{
- // Lecture des données reçues
- // La variable $donnees se comportent ensuite comme $_GET ou $_POST
- //$donnees = $form->getData();
- //... ici sans doute un return ou une redirection ...
- //}
-
-		        
-	  
-//	}
-
-
 
 
 	/**
@@ -155,7 +106,7 @@ class Gestionnaire extends AbstractController
 
 
 
-/**
+        /**
 	 * @Route("equipement")
 	 */
 
@@ -173,10 +124,7 @@ class Gestionnaire extends AbstractController
 	  
 	
 
-}
-
-
-
+	}
 
 
 }
